@@ -1,87 +1,89 @@
 body {
-    background-color: #121212;
-    color: white;
-    font-family: arial;
-    font-weight: bold;
-    
-     
+  background-color: #121212;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-main {
-    background-color: #1ED760;
-    border-radius: 15px;
-    width: 40%;
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 10px 5px 5px black;
-}
-
-main h3 {
-    font-size: 1.8rem;
-}
-
-
-.lista::after {
-    clear:both;
-    content: "";
-    display: block;    
-}
-
-.lista li {
-    float: left;
-    list-style-type: none;
-    background-color: #121212;
-    border-radius: 15px; 
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-}
-
-.lista a {
-    text-decoration: none;
-    color: white;
-}
-
 
 header {
-    margin: auto;
-    padding: 10px;
-    width: 30%;
-    
+  padding: 10px;
+  width: 80%;
 }
 
 nav {
-    display: flex;
-    padding: 10px
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav a {
-    margin: 20px;
-    font-size: 1.5rem;
-    padding: 10px;
-    background-color: #1ED760;
-    text-decoration: none;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 10px 5px 5px black;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #1ed760;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
 }
 
+.container-principal {
+  display: flex;
+}
+.container-musica {
+  background-color: #1ed760;
+  border-radius: 0 15px 15px 0;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 5px 5px black;
+}
+
+.titulo-lista {
+  font-size: 1.8rem;
+}
+
+.lista::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.lista li {
+  list-style-type: none;
+  background-color: #121212;
+  border-radius: 0 15px 15px 0;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-left: -60px;
+  cursor: pointer;
+}
+
+.lista li:hover {
+  opacity: 0.9;
+}
+
+.lista a {
+  text-decoration: none;
+  color: white;
+}
 
 .cad-letra {
-    margin-bottom: 10px;
-    color: black;
+  margin-bottom: 10px;
+  color: black;
 }
 
 .button-form {
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 15px;
-    padding: 15px;
-    background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: black;
 }
 
-.musica-letra {
-    margin: auto;
-    width: 40%;
+.container-letra {
+  width: 40%;
+  margin: 40px;
 }
