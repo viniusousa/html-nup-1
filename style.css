@@ -28,7 +28,15 @@ nav a {
   box-shadow: 10px 5px 5px black;
 }
 
-.container-principal {
+label {
+  color: white;
+}
+
+.main-musica {
+  display: flex;
+}
+
+.main-cadastro {
   display: flex;
 }
 .container-musica {
@@ -86,4 +94,10 @@ nav a {
 .container-letra {
   width: 40%;
   margin: 40px;
+}
+
+.formulario {
+  width: 40%;
+  margin: 0 40px;
+  justify-content: center;
 }
